@@ -32,26 +32,18 @@ namespace R03BMI
                 }
                 double bmi = w / h * h;
 
-                switch(bmi){
-
-                case < 18.5: output = "低体重 (痩せ)"; break;
-                case < 25: output = "普通体重"; break;
-                case < 30: output = "肥満 (1度)"; break;
-                case < 35: output = "肥満 (2度)"; break;
-                case < 40: output = "肥満 (3度)"; break;
-                default: output = "肥満 (4度)"; break;
-
-                }
+            output = "低体重 (痩せ)";
+            if(bmi >= 18.5)output = "普通体重";
+            if(bmi >= 25)output = "肥満 (1度)";
+            if(bmi >= 30)output = "肥満 (2度)";
+            if(bmi >= 35)output = "肥満 (3度)";
+            if(bmi >= 40)output = "肥満 (4度)";
 
             double bmi2 = Math.Round(bmi,1);
 
             creater.Text ="BIM:"+bmi2+" "+output;
 
-
             }
-
-
-
 
         }
     }
