@@ -30,7 +30,7 @@ namespace R03BMI
                 if (w >= 1000){
                     w = w / 1000;
                 }
-                double bmi = w / h * h;
+                double bmi = w / (h * h);
 
             output = "低体重 (痩せ)";
             if(bmi >= 18.5)output = "普通体重";
@@ -41,7 +41,7 @@ namespace R03BMI
 
             double bmi2 = Math.Round(bmi,1);
 
-            creater.Text ="BIM:"+bmi2+" "+output;
+            result.Text ="BIM:"+bmi2+" "+output;
 
             }
 
