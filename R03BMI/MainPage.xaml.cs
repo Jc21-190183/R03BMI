@@ -34,7 +34,7 @@ namespace R03BMI
 
                 switch(bmi){
 
-                case < 18.50: output = "低体重 (痩せ)"; break;
+                case < 18.5: output = "低体重 (痩せ)"; break;
                 case < 25: output = "普通体重"; break;
                 case < 30: output = "肥満 (1度)"; break;
                 case < 35: output = "肥満 (2度)"; break;
